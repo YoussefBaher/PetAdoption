@@ -1,0 +1,64 @@
+package pet.adoption;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author user
+ */
+public class Adoption {
+      private String petName;
+    private int petId;
+    private boolean petIdFound;
+    private boolean petVaccinated;
+    
+    public void setPetName(String petName){
+        if(petName.equals(null)){
+        Scanner sc=new Scanner(System.in);
+        petName = sc.nextLine();
+    }
+        this.petName= petName;
+    }
+     public void setPetId(int petId){
+        //logic must be added
+       this.petId=petId;
+    }
+      public void setPetIdFound(boolean petIdFound){
+        //logic must be added
+       this.petIdFound=petIdFound;
+    }
+
+      public void setPetVaccinated(boolean petVaccinated){
+        //logic must be added
+       this.petVaccinated= petVaccinated;
+    }
+    public String getPetname(){
+        //logic must be added
+            return petName;
+    }
+    public int getPetId(){
+        //logic must be added
+        return petId;
+    }
+    public boolean getPetIdFound(){
+        //logic must be added
+        return petIdFound;
+    }
+    public boolean getPetVaccinated(){
+        //logic must be added
+        return petVaccinated;
+    }
+    public void searchPetId(boolean x){
+        if(x= petIdFound){
+            this.petIdFound= x;
+            
+        }
+    }
+    public boolean isPetVaccinated(boolean petVaccinated){
+        if(petVaccinated= true){
+            return true;
+        }
+        else{ return false;}
+    }
+    
+}

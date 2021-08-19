@@ -1,0 +1,54 @@
+package pet.adoption;
+
+import java.util.Scanner;
+
+
+public class AdoptionDetails extends Adoption{
+    public Adoption obj;
+    private String petType;
+    private String petHealth;
+    private boolean petTrained;
+    private String Breed;
+     public void setPetType(String petType){
+        //logic must be added
+       this.petType=petType;
+    }
+     public void setPetHealth(String petHealth){
+        //logic must be added
+       this.petHealth=petHealth;
+    }
+     public void setBreed(String Breed){
+        //logic must be added
+       this.Breed=Breed;
+    }
+     public void setBreed(boolean petTrained){
+        //logic must be added
+       this.petTrained=petTrained;
+    }
+    
+    
+   public String getpetType(){
+        //logic must be added
+        return petType;
+    }
+   
+    public String getpetHealth(){
+        //logic must be added
+        return petHealth;
+    } public String getBreed(){
+        //logic must be added
+        return Breed;
+    } 
+    public Boolean getpetTrained(){
+        //logic must be added
+        return petTrained;
+    }
+   public void adoptPet(String petName,int petId,boolean petIdFound,boolean petVaccinated){
+        System.out.println("Pet name is:" + obj.getPetname() + "Pet Id is:" + obj.getPetId() + "check if petId is in shelter:" + obj.getPetIdFound() + "check if pet is vaccinated:" + obj.getPetVaccinated() );
+   }
+        public void removePet(Adoption p){
+            p=null;
+        }
+        
+    
+}
